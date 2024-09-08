@@ -1,8 +1,8 @@
 import cv2
-vid = cv2.VideoCapture(1)
+vid = cv2.VideoCapture(0)
 
 while(True):
-    ret, frame = vid.read(1)
+    ret, frame = vid.read(0)
     cv2.imshow("frame",frame)
 
     frame = cv2.resize(frame, (540, 380), fx = 22, fy = 11,
